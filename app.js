@@ -10,5 +10,11 @@ new Vue({
 		greet: function(time){
 			return 'Good' + time; + '' + this.name;
 		}
+		add: function(){
+			this.age++;
+		}
+		substract: function(){
+			this.age--;
+		}
 	}
 	});
