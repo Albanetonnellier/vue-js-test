@@ -6,7 +6,7 @@ new Vue({
 	}
 	methods: {
 		greet: function(time){
-			return 'Good' + time: + '' + this.name:
+			return 'Good' + time; + '' + this.name;
 		}
 	}
 	});
