@@ -24,8 +24,8 @@
 		<h3>Conditional</h3>
 		<button v-on:click="error = !error">Toggle error</button>
 		<button v-on:click="success = !success">Toggle Sucess</button>
-		<p v-if="error">There is an error</p>
-		<p v-else-if="success">Yay it's successul</p>
+		<p v-show="error">There is an error</p>
+		<p v-show="success">Yay it's successul</p>
 	</div>
 
 	<script src="app.js"></script>
