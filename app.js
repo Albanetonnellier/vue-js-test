@@ -6,9 +6,11 @@ new Vue({
 		website: "https://www.youtube.com/watch?v=xIOwFTCBBDg&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa&index=5",
 		age: '24'
 		a: 0,
-		b: 0
+		b: 0,
+		available: false,
+		nearby: false
 	}
-	computed: {
+	method: {
 		greet: function(time){
 			return 'Good' + time; + '' + this.name;
 		},
@@ -17,7 +19,9 @@ new Vue({
 		},
 		substract: function(){
 			this.age--;
-		},
+	}
+
+	computed: {
 		addToA: function(){
 			console.log('addToA');
 			return this.a + this.age;
@@ -25,6 +29,14 @@ new Vue({
 		addToB: function(){
 			console.log('addToB');
 			return.this.b + this.age;
+		},
+
+		compClasses: function(){
+			return {
+				available: this.available,
+				nearby: this.nearby
+			}
 		}
-	}
+
+	
 	});
