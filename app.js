@@ -8,7 +8,7 @@ new Vue({
 		a: 0,
 		b: 0
 	}
-	methods: {
+	computed: {
 		greet: function(time){
 			return 'Good' + time; + '' + this.name;
 		},
