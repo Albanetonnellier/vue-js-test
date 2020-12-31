@@ -8,7 +8,9 @@ new Vue({
 		a: 0,
 		b: 0,
 		available: false,
-		nearby: false
+		nearby: false,
+		error: false,
+		success: false
 	}
 	method: {
 		greet: function(time){
