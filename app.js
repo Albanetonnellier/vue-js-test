@@ -23,6 +23,10 @@ new Vue({
 		},
 		substract: function(){
 			this.age--;
+		},
+		readRefs: function(){
+			console.log(this.$refs.input.value);
+		}
 	}
 
 	computed: {
