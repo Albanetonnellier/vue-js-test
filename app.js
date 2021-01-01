@@ -10,8 +10,10 @@ new Vue({
 		available: false,
 		nearby: false,
 		error: false,
-		success: false
-	}
+		success: false,
+			characters: ['Albane', 'Cleo', 'Flore']
+
+	},
 	method: {
 		greet: function(time){
 			return 'Good' + time; + '' + this.name;
