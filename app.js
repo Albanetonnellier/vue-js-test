@@ -7,6 +7,7 @@ new Vue({
 		age: '24'
 		a: 0,
 		b: 0,
+		output: 'Your fav food',
 		available: false,
 		nearby: false,
 		error: false,
@@ -26,6 +27,7 @@ new Vue({
 		},
 		readRefs: function(){
 			console.log(this.$refs.input.value);
+			this.output = this.$refs.input.value;
 		}
 	}
 
